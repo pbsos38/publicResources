@@ -16,14 +16,8 @@ app.use(cors());
 //body-parser
 app.use(bodyparser.json());
 
-//static files
-app.use(express.static(path.join(__dirname,'public')));
-
 // routes
 app.use('/api', route);
-
-
-
 
 // testing  server
 app.get('/',(req, res)=>{
